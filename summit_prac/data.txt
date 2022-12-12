@@ -1,0 +1,19 @@
+
+
+Thanks, I upvoted you both. I wanted to know the git config --list command because I can look at the effective config in a repository and I can differ local, global and system config with the appropriate parameter (--global, --local, --system). I'll accept your answer as soon as I'm able to because you were a few seconds faster :) – 
+wullxz
+ Sep 3, 2012 at 21:21
+2
+Be careful, there are a lot of potential sources for git configuration. Looking at the file gives only a part. @linquize's answer is in fact correct. – 
+vonbrand
+ Mar 14, 2014 at 14:50 
+2
+@vonbrand: --list is equivalent to -l. – 
+Cameron Skinner
+ Mar 14, 2014 at 15:45
+14
+Shorthands (like -l) come in handy when you become a power user and use the feature often enough, to actually profit from typing less characters. I find it easier to find and remember the long --list option. For less obvious shorthands I often have to check what do they stand for, so I prefer long names. They're even easier, with command completion, when you don't really have to type all characters, but still see whole option name. – 
+Krzysztof Jabłoński
+ Oct 24, 2014 at 12:03 
+ Formatting and whitespace issues are some of the more frustrating and subtle problems that many developers encounter when collaborating, especially cross-platform. It’s very easy for patches or other collaborated work to introduce subtle whitespace changes because editors silently introduce them, and if your files ever touch a Windows system, their line endings might be replaced. Git has a few configuration options to help with these issues
+ If you’re programming on Windows and working with people who are not (or vice-versa), you’ll probably run into line-ending issues at some point. This is because Windows uses both a carriage-return character and a linefeed character for newlines in its files, whereas macOS and Linux systems use only the linefeed character. This is a subtle but incredibly annoying fact of cross-platform work; many editors on Windows silently replace existing LF-style line endings with CRLF, or insert both line-ending characters when the user hits the enter key.
